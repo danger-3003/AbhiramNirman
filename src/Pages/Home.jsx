@@ -35,26 +35,26 @@ function Home() {
                     </div>
                 </div>
             </div>
-            <div className="bg-gradient-to-r from-BStart via-BMiddle to-BEnd text-white py-1">
+            <div className="bg-gradient-to-r from-BStart via-BMiddle to-BEnd text-[0.7rem] sm:text-base text-white py-1">
                 <Marquee className="" autoFill>
                     <div className="flex items-center justify-center mx-1 gap-1">
-                        <img src={Element} alt="" />
+                        <img src={Element} alt="" className="w-3 sm:w-5"/>
                         <p>KURMANNAPALEM</p>
                     </div>
                     <div className="flex items-center justify-center mx-1 gap-1">
-                        <img src={Element} alt="" />
+                        <img src={Element} alt="" className="w-3 sm:w-5"/>
                         <p>ATCHYUTAPURAM</p>
                     </div>
                     <div className="flex items-center justify-center mx-1 gap-1">
-                        <img src={Element} alt="" />
+                        <img src={Element} alt="" className="w-3 sm:w-5"/>
                         <p>SEETHAMANDHARA</p>
                     </div>
                     <div className="flex items-center justify-center mx-1 gap-1">
-                        <img src={Element} alt="" />
+                        <img src={Element} alt="" className="w-3 sm:w-5"/>
                         <p>G+15 FLOORS</p>
                     </div>
                     <div className="flex items-center justify-center mx-1 gap-1">
-                        <img src={Element} alt="" />
+                        <img src={Element} alt="" className="w-3 sm:w-5"/>
                         <p>2BHK & 3BHK</p>
                     </div>
                 </Marquee>

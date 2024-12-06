@@ -34,7 +34,7 @@ function Ongoing() {
                     <p className="bg-gradient-to-r from-BStart via-BMiddle to-BEnd text-transparent bg-clip-text text-center sm:text-left text-[1.4rem] sm:text-2xl md:text-3xl lg:text-4xl font-bold">
                         Abhiram Anand
                     </p>
-                    <p className="bg-gradient-to-r from-BStart via-BMiddle to-BEnd text-transparent bg-clip-text font-[Italiana] text-center sm:text-left text-[1.4rem] sm:text-2xl md:text-3xl lg:text-4xl ">
+                    <p className="bg-gradient-to-r from-BStart via-BMiddle to-BEnd text-transparent bg-clip-text font-[Italiana] text-center sm:text-left text-[1.4rem] sm:text-2xl md:text-3xl lg:text-4xl font-medium">
                         Essence Of Living
                     </p>
                     <div className="text-BStart flex items-start justify-center gap-5 lg:gap-10 mt-5 md:mt-10">
@@ -54,7 +54,7 @@ function Ongoing() {
                         <div className="mx-5 my-1">
                             <a
                                 href="tel:+"
-                                className="hover:bg-none border border-BStart bg-gradient-to-r text-white duration-300 hover:text-BStart from-BStart via-BMiddle to-BEnd font-semibold text-[0.7rem] md:text-sm px-4 py-1 md:px-5 md:py-2 rounded-[0.25rem]"
+                                className="hover:bg-none border border-BStart bg-gradient-to-r text-white duration-300 hover:text-BStart from-BStart via-BMiddle to-BEnd font-semibold text-[0.7rem] md:text-sm px-4 md:px-5 py-2 rounded-[0.25rem]"
                             >
                                 <FontAwesomeIcon icon={faDownload} className="mr-3"/>
                                 Brochure
@@ -63,7 +63,7 @@ function Ongoing() {
                         <div className="mx-5 my-1">
                             <a
                                 href="tel:+"
-                                className="bg-none border border-BStart hover:text-white hover:bg-gradient-to-r duration-300 from-BStart via-BMiddle to-BEnd font-semibold text-[0.7rem] md:text-sm px-4 py-1 md:px-5 md:py-2 rounded-[0.25rem]"
+                                className="bg-none border border-BStart hover:text-white hover:bg-gradient-to-r duration-300 from-BStart via-BMiddle to-BEnd font-semibold text-[0.7rem] md:text-sm px-4 md:px-5 py-2 rounded-[0.25rem]"
                             >
                                 <FontAwesomeIcon icon={faLocationDot} className="mr-3"/>
                                 Location

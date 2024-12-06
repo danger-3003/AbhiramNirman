@@ -16,8 +16,8 @@ function Home() {
     },[location]);
 
     return (
-        <div ref={homeSection}>
-            <div className="w-full mt-14 text-white font-[Montserrat]">
+        <div ref={homeSection} className="pt-14">
+            <div className="w-full text-white font-[Montserrat]">
                 <div className="absolute top-14 h-[19rem] sm:h-[20rem] md:h-[25rem] lg:h-[30rem] xl:h-[35rem] w-full">
                     <HeaderSwiper />
                 </div>

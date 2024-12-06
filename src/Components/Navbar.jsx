@@ -10,7 +10,7 @@ function Navbar() {
         setMenu(!menu);
     };
     return (
-        <div className="flex items-center justify-center flex-row fixed h-14 w-full top-0 bg-navbarGradient text-BEnd font-semibold text-[13px] lg:text-sm font-[Montserrat]">
+        <div className="flex items-center justify-center flex-row fixed z-10 h-14 w-full top-0 bg-navbarGradient text-BEnd font-semibold text-[13px] lg:text-sm font-[Montserrat]">
             <ul className={`absolute ${menu?"top-14":"-top-52"} duration-500 bg-navbarGradient font-bold sm:bg-none w-full sm:w-auto py-4 sm:py-0 sm:top-0 sm:relative flex items-center justify-center flex-col sm:flex-row gap-3 md:gap-5 uppercase`}>
                 <li className="" onClick={handleMenu}>
                     <Link to="/#home">Home</Link>

@@ -1,4 +1,7 @@
 import React, { useRef, useState } from 'react';
+import Ionic from "../assets/Projects/IonicTowers.jpg"
+import Touch from "../assets/Projects/Touchstone.jpg"
+import Imperio from "../assets/Projects/TsImperio.jpg"
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -10,31 +13,44 @@ import 'swiper/css/navigation';
 import './styles.css';
 
 // import required modules
-import { Pagination, Navigation } from 'swiper/modules';
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 export default function App() {
   return (
     <>
       <Swiper
-        slidesPerView={1}
-        spaceBetween={30}
-        loop={true}
-        pagination={{
-          clickable: true,
+        spaceBetween={0}
+        centeredSlides={true}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
         }}
+        // pagination={{
+        //   clickable: true,
+        // }}
+        loop={true}
         navigation={true}
-        modules={[Pagination, Navigation]}
-        className="mySwiper"
+        modules={[Autoplay, Pagination, Navigation]}
+        className="h-full"
       >
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
+        <SwiperSlide>
+            <div className="h-full w-full" style={{background:`url(${Touch})`,backgroundPosition:"right top",backgroundSize:"cover"}}></div>
+        </SwiperSlide>
+        <SwiperSlide>
+            <div className="h-full w-full" style={{background:`url(${Ionic})`,backgroundPosition:"left bottom",backgroundSize:"cover"}}></div>
+        </SwiperSlide>
+        <SwiperSlide>
+            <div className="h-full w-full" style={{background:`url(${Imperio})`,backgroundPosition:"left bottom",backgroundSize:"cover"}}></div>
+        </SwiperSlide>
+        <SwiperSlide>
+            <div className="h-full w-full" style={{background:`url(${Touch})`,backgroundPosition:"right top",backgroundSize:"cover"}}></div>
+        </SwiperSlide>
+        <SwiperSlide>
+            <div className="h-full w-full" style={{background:`url(${Ionic})`,backgroundPosition:"left bottom",backgroundSize:"cover"}}></div>
+        </SwiperSlide>
+        <SwiperSlide>
+            <div className="h-full w-full" style={{background:`url(${Imperio})`,backgroundPosition:"left bottom",backgroundSize:"cover"}}></div>
+        </SwiperSlide>
       </Swiper>
     </>
   );

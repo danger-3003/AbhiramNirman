@@ -1,9 +1,66 @@
-import React from 'react'
+import {useEffect, useRef} from "react";
+import { useLocation } from "react-router-dom";
+import HeaderSwiper from "../Components/HeaderSwiper";
+import Marquee from "react-fast-marquee";
+import Element from "../assets/MarqueeElement.svg";
 
 function Home() {
-  return (
-    <div>Home</div>
-  )
+    const location=useLocation();
+    const homeSection=useRef(null);
+
+    useEffect(()=>{
+        if(location.hash==="#home" && homeSection.current)
+        {
+            homeSection.current.scrollIntoView({behavior:"smooth"});
+        }
+    },[location]);
+
+    return (
+        <div ref={homeSection}>
+            <div className="w-full mt-14 text-white font-[Montserrat]">
+                <div className="absolute top-14 h-[19rem] sm:h-[20rem] md:h-[25rem] lg:h-[30rem] xl:h-[35rem] w-full">
+                    <HeaderSwiper />
+                </div>
+                <div className="relative flex items-center justify-center flex-col z-[9] py-20 sm:py-14 px-5 sm:px-7 md:px-10 lg:px-16 h-[19rem] sm:h-[20rem] md:h-[25rem] lg:h-[30rem] xl:h-[35rem] bg-gradient-to-r from-[#000000d0] to-[#0000003d]">
+                    <div className="w-[90vw] lg:w-[60rem] xl:w-[70rem] flex items-center sm:items-start justify-center flex-col">
+                        <p className="font-light text-[1.7rem] sm:text-[2.5rem] md:text-[3rem] lg:text-[4rem] text-center sm:text-left tracking-widest">ABHIRAM NIRMAN</p>
+                        <p className="font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl text-center sm:text-left">Redefining Modern Living</p>
+                        <div className="mt-9 mb-3 md:mt-12 sm:mb-10 flex items-center sm:items-start justify-center flex-col">
+                            <p className="tracking-[0.5rem] -mr-2 sm:mr-0 text-lg md:text-xl">SPACIOUS</p>
+                            <p className="text-xl sm:text-2xl md:text-3xl font-medium">2 & 3 BHKs</p>
+                        </div>
+                        <div>
+                            <a href="tel:+" className="bg-gradient-to-r from-BStart via-BMiddle to-BEnd font-semibold text-[0.7rem] sm:text-sm px-4 py-1 sm:px-5 sm:py-2 rounded-[0.25rem]">Enquiry Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="bg-gradient-to-r from-BStart via-BMiddle to-BEnd text-white py-1">
+                <Marquee className="" autoFill>
+                    <div className="flex items-center justify-center mx-1 gap-1">
+                        <img src={Element} alt="" />
+                        <p>KURMANNAPALEM</p>
+                    </div>
+                    <div className="flex items-center justify-center mx-1 gap-1">
+                        <img src={Element} alt="" />
+                        <p>ATCHYUTAPURAM</p>
+                    </div>
+                    <div className="flex items-center justify-center mx-1 gap-1">
+                        <img src={Element} alt="" />
+                        <p>SEETHAMANDHARA</p>
+                    </div>
+                    <div className="flex items-center justify-center mx-1 gap-1">
+                        <img src={Element} alt="" />
+                        <p>G+15 FLOORS</p>
+                    </div>
+                    <div className="flex items-center justify-center mx-1 gap-1">
+                        <img src={Element} alt="" />
+                        <p>2BHK & 3BHK</p>
+                    </div>
+                </Marquee>
+            </div>
+        </div>
+    );
 }
 
-export default Home
+export default Home;

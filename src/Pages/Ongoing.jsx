@@ -17,7 +17,7 @@ function Ongoing() {
     return (
         <div
             ref={projectSection}
-            className="h-max w-full flex items-center py-16 justify-center flex-col bg-gradient-to-br from-cyan to-white"
+            className="w-full flex items-center py-16 justify-center flex-col bg-gradient-to-br from-cyan to-white"
         >
             <div className="text-[1.4rem] sm:text-2xl md:text-3xl font-bold text-BStart font-[Italiana] flex items-center justify-center uppercase mb-7">
                 <img src={Line} alt="Line" className="rotate-180 w-16 sm:w-24 md:w-32"/>
@@ -63,7 +63,7 @@ function Ongoing() {
                         <div className="mx-5 my-1">
                             <a
                                 href="tel:+"
-                                className="bg-none border border-BStart hover:text-white hover:bg-gradient-to-r duration-300 from-BStart via-BMiddle to-BEnd font-semibold text-[0.7rem] md:text-sm px-4 md:px-5 py-2 rounded-[0.25rem]"
+                                className="bg-none border border-BStart hover:text-white text-BEnd hover:bg-gradient-to-r duration-300 from-BStart via-BMiddle to-BEnd font-semibold text-[0.7rem] md:text-sm px-4 md:px-5 py-2 rounded-[0.25rem]"
                             >
                                 <FontAwesomeIcon icon={faLocationDot} className="mr-3"/>
                                 Location

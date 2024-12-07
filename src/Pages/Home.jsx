@@ -30,7 +30,7 @@ function Home() {
                             <p className="text-xl sm:text-2xl md:text-3xl font-medium">2 & 3 BHKs</p>
                         </div>
                         <div>
-                            <a href="tel:+" className="bg-gradient-to-r from-BStart via-BMiddle to-BEnd font-semibold text-[0.7rem] sm:text-sm px-4 py-1 sm:px-5 sm:py-2 rounded-[0.25rem]">Enquiry Now</a>
+                            <a href="tel:+" className="bg-gradient-to-r from-BStart via-BMiddle to-BEnd font-semibold text-[0.7rem] sm:text-sm px-4 sm:px-5 py-2 rounded-[0.25rem]">Enquiry Now</a>
                         </div>
                     </div>
                 </div>

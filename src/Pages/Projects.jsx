@@ -64,7 +64,7 @@ function Projects() {
                                 sm:w-32 md:w-40 lg:w-48 xl:w-60"
                             />
                         </div>
-                        <div className="mx-5 my-2 hover:cursor-pointer" onClick={handleAmenities}>
+                        <div className="mx-5 my-2 hover:cursor-pointer">
                             <div
                                 className="border border-BStart bg-gradient-to-r text-white duration-300 hover:text-BStart from-BStart hover:from-white hover:via-white hover:to-white via-BMiddle to-BEnd font-semibold text-sm px-4 md:px-5 py-1.5 rounded-[0.25rem]"
                             >
@@ -116,21 +116,17 @@ function Projects() {
                     </div>
                 </div>
             </div>
-
-            {
-                amenities && 
-                <div className="flex items-center justify-center py-8 sm:py-14">
-                    <div className="flex items-center justify-center flex-col sm:flex-row gap-5 md:gap-10 w-[90vw] sm:w-[36rem] md:w-[45rem] lg:w-[55rem] xl:w-[65rem]">
-                        <div className="sm:w-[30%]">
-                            <p className="font-[Montserrat] bg-gradient-to-r from-BStart via-BMiddle to-BEnd text-transparent bg-clip-text text-center sm:mb-4 sm:text-left text-2xl sm:text-3xl md:text-3xl lg:text-4xl font-bold">Browse</p>
-                            <p className="bg-gradient-to-r from-BStart via-BMiddle to-BEnd text-transparent bg-clip-text font-[Italiana] text-center sm:text-left text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium">Touchstone Amenities</p>
-                        </div>
-                        <div className="w-[90vw] sm:w-[70%]">
-                            <Amenities />
-                        </div>
+            <div className="flex items-center justify-center py-8 sm:py-14 bg-cyan">
+                <div className="flex items-center justify-center flex-col sm:flex-row gap-5 md:gap-10 w-[90vw] sm:w-[36rem] md:w-[45rem] lg:w-[55rem] xl:w-[65rem]">
+                    <div className="sm:w-[30%]">
+                        <p className="font-[Montserrat] bg-gradient-to-r from-BStart via-BMiddle to-BEnd text-transparent bg-clip-text text-center sm:mb-4 sm:text-left text-2xl sm:text-3xl md:text-3xl lg:text-4xl font-bold">Browse</p>
+                        <p className="bg-gradient-to-r from-BStart via-BMiddle to-BEnd text-transparent bg-clip-text font-[Italiana] text-center sm:text-left text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium">Touchstone Amenities</p>
+                    </div>
+                    <div className="w-[90vw] sm:w-[70%]">
+                        <Amenities />
                     </div>
                 </div>
-            }
+            </div>
         </>
     );
 }

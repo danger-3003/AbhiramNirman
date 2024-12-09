@@ -4,6 +4,7 @@ import Person from "../assets/About/Person.jpg";
 import Marquee from "react-fast-marquee";
 import Element from "../assets/MarqueeElement.svg";
 import Quotation from "../Components/Quotation";
+import Clients from "./Clients";
 
 function About() {
     const location = useLocation();
@@ -80,6 +81,7 @@ function About() {
                 </Marquee>
             </div>
             <Quotation />
+            <Clients />
         </>
         
     );

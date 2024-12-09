@@ -63,10 +63,10 @@ function UpComing() {
                         </div>
                     </div>
                     <div className="flex items-center justify-center flex-wrap mt-5">
-                        <div className="mx-5 md:mx-3 lg:mx-5 my-1">
+                        <div className="mx-5 md:mx-3 lg:mx-5 my-2">
                             <a
                                 href="tel:+"
-                                className="hover:bg-none border border-BStart bg-gradient-to-r text-white duration-300 hover:text-BStart from-BStart via-BMiddle to-BEnd font-semibold text-[0.7rem] md:text-sm px-4 md:px-5 py-2 rounded-[0.25rem]"
+                                className="hover:bg-none border border-BStart bg-gradient-to-r text-white duration-300 hover:text-BStart from-BStart via-BMiddle to-BEnd font-semibold text-[0.7rem] md:text-sm px-4 md:px-5 my-1 py-2 rounded-[0.25rem]"
                             >
                                 <FontAwesomeIcon
                                     icon={faDownload}
@@ -78,7 +78,7 @@ function UpComing() {
                         <div className="mx-5 md:mx-3 lg:mx-5 my-1">
                             <a
                                 href="tel:+"
-                                className="bg-none border border-BStart hover:text-white text-BEnd hover:bg-gradient-to-r duration-300 from-BStart via-BMiddle to-BEnd font-semibold text-[0.7rem] md:text-sm px-4 md:px-5 py-2 rounded-[0.25rem]"
+                                className="bg-none border border-BStart hover:text-white text-BEnd hover:bg-gradient-to-r duration-300 from-BStart via-BMiddle to-BEnd font-semibold text-[0.7rem] md:text-sm px-4 md:px-5 my-1 py-2 rounded-[0.25rem]"
                             >
                                 <FontAwesomeIcon
                                     icon={faLocationDot}

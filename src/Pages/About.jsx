@@ -1,12 +1,23 @@
-import React from "react";
+import React, {useEffect, useRef} from "react";
+import { useLocation } from "react-router-dom";
 import Person from "../assets/About/Person.jpg";
 import Marquee from "react-fast-marquee";
 import Element from "../assets/MarqueeElement.svg"
 
 function About() {
+    const location = useLocation();
+    const aboutSection=useRef(null);
+
+    useEffect(()=>{
+        if(location.hash==="#about" && aboutSection.current)
+        {
+            aboutSection.current.scrollIntoView({behavior:"smooth"});
+        }
+    },[location]);
+
     return (
         <>
-            <div className="bg-[#fff4e7] py-14 flex items-center justify-center flex-col">
+            <div ref={aboutSection} className="bg-[#fff4e7] py-14 flex items-center justify-center flex-col">
                 <div className="w-[90vw] md:w-[45rem] lg:w-[58rem] xl:w-[70rem] flex items-center justify-between flex-col sm:flex-row gap-10">
                     <div className="flex items-center justify-center flex-col">
                         <img src={Person} alt="Person" className="w-[70vw] sm:w-[15rem] md:w-[17rem] lg:w-[20rem]" />

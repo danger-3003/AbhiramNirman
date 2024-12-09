@@ -93,7 +93,7 @@ export default function App() {
                 </SwiperSlide>
                 <SwiperSlide className="mb-10">
                     <div className="md:w-52 lg:w-72 xl:w-80">
-                        <img src={SriRaj} alt="SriRaj"/>
+                        <img src={Diamond} alt="Diamond"/>
                         <div className="mt-3 md:mt-5 flex items-start justify-center flex-col font-normal text-[0.65rem] sm:text-sm">
                             <p>ABHIRAM’S Diamond Spring</p>
                             <p className="font-extralight">Dwarakanagar, Visakhapatnam</p>

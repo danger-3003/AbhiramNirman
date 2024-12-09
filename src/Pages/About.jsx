@@ -2,7 +2,8 @@ import React, {useEffect, useRef} from "react";
 import { useLocation } from "react-router-dom";
 import Person from "../assets/About/Person.jpg";
 import Marquee from "react-fast-marquee";
-import Element from "../assets/MarqueeElement.svg"
+import Element from "../assets/MarqueeElement.svg";
+import Quotation from "../Components/Quotation";
 
 function About() {
     const location = useLocation();
@@ -78,6 +79,7 @@ function About() {
                     </div>
                 </Marquee>
             </div>
+            <Quotation />
         </>
         
     );

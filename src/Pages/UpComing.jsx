@@ -4,10 +4,17 @@ import { faDownload, faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Line from "../assets/About/Line.svg";
 import Anand from "../assets/Projects/AbhiramAnand.jpg";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function UpComing() {
     const location = useLocation();
     const projectSection = useRef(null);
+
+    useEffect(()=>{
+        AOS.init({duration:1000});
+        AOS.refresh();
+    });
 
     useEffect(() => {
         if (location.hash === "#projects" && projectSection.current) {
@@ -19,7 +26,7 @@ function UpComing() {
             ref={projectSection}
             className="w-full flex items-center py-16 justify-center flex-col bg-gradient-to-br from-cyan to-white"
         >
-            <div className="text-[1.4rem] sm:text-2xl md:text-3xl font-bold text-BStart font-[Italiana] flex items-center justify-center uppercase mb-7">
+            <div data-aos="fade-down" className="text-[1.4rem] sm:text-2xl md:text-3xl font-bold text-BStart font-[Italiana] flex items-center justify-center uppercase mb-7">
                 <img
                     src={Line}
                     alt="Line"
@@ -30,13 +37,14 @@ function UpComing() {
                 </p>
                 <img src={Line} alt="Line" className=" w-16 sm:w-24 md:w-32" />
             </div>
-            <div className="w-[90vw] lg:w-[60rem] xl:w-[70rem] flex items-center justify-center flex-col sm:flex-row font-[Montserrat] gap-5 md:gap-10 lg:gap-20">
+            <div className="relative overflow-hidden w-[90vw] lg:w-[60rem] xl:w-[70rem] flex items-center justify-center flex-col sm:flex-row font-[Montserrat] gap-5 md:gap-10 lg:gap-20">
                 <img
+                     data-aos="fade-right"
                     src={Anand}
                     alt=""
                     className="w-[90vw] sm:w-[15rem] md:w-[20rem] lg:w-[25rem] xl:w-[30rem]"
                 />
-                <div>
+                <div  data-aos="fade-left">
                     <p className="bg-gradient-to-r from-BStart via-BMiddle to-BEnd text-transparent bg-clip-text text-center sm:text-left text-[1.4rem] sm:text-2xl md:text-3xl lg:text-4xl font-bold">
                         Abhiram Anand
                     </p>

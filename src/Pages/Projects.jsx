@@ -1,14 +1,21 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Touch from "../assets/Projects/Touchstone.jpg";
 import Line from "../assets/otherProjects/Line.svg";
 import TopLine from "../assets/About/Line.svg";
 import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Amenities from "../Components/Amenities";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Projects() {
     const [visible, setVisible] = useState(false);
     const [amenities, setAmenities] = useState(false);
+
+    useEffect(()=>{
+        AOS.init({duration:1000});
+        AOS.refresh();
+    });
 
     const handleVisible = () => {
         setVisible(!visible);
@@ -18,7 +25,7 @@ function Projects() {
     };
     return (
         <>
-            <div className="text-[1.4rem] sm:text-2xl md:text-3xl font-bold text-BStart font-[Italiana] flex items-center justify-center uppercase my-7">
+            <div data-aos="fade-down" className="text-[1.4rem] sm:text-2xl md:text-3xl font-bold text-BStart font-[Italiana] flex items-center justify-center uppercase my-7">
                 <img
                     src={TopLine}
                     alt="Line"
@@ -43,7 +50,7 @@ function Projects() {
                 }}
             >
                 <div className="flex items-center justify-between flex-col h-full relative overflow-hidden font-[Montserrat]">
-                    <div className="flex items-center justify-center flex-col text-center text-white gap-2">
+                    <div data-aos="fade-left" className="flex items-center justify-center flex-col text-center text-white gap-2">
                         <p className="font-extralight text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
                             ABHIRAM’S
                         </p>
@@ -82,6 +89,7 @@ function Projects() {
                         `}
                     >
                         <div
+                            data-aos="fade-up"
                             className="flex items-center justify-center flex-col hover:cursor-pointer mb-2"
                             onClick={handleVisible}
                         >
@@ -117,8 +125,8 @@ function Projects() {
                 </div>
             </div>
             <div className="flex items-center justify-center py-8 sm:py-14 bg-cyan">
-                <div className="flex items-center justify-center flex-col sm:flex-row gap-5 md:gap-10 w-[90vw] sm:w-[36rem] md:w-[45rem] lg:w-[55rem] xl:w-[65rem]">
-                    <div className="sm:w-[30%]">
+                <div className="relative overflow-hidden flex items-center justify-center flex-col sm:flex-row gap-5 md:gap-10 w-[90vw] sm:w-[36rem] md:w-[45rem] lg:w-[55rem] xl:w-[65rem]">
+                    <div data-aos="fade-right" className="sm:w-[30%]">
                         <p className="font-[Montserrat] bg-gradient-to-r from-BStart via-BMiddle to-BEnd text-transparent bg-clip-text text-center sm:mb-4 sm:text-left text-2xl sm:text-3xl md:text-3xl lg:text-4xl font-bold">Browse</p>
                         <p className="bg-gradient-to-r from-BStart via-BMiddle to-BEnd text-transparent bg-clip-text font-[Italiana] text-center sm:text-left text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium">Touchstone Amenities</p>
                     </div>

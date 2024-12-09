@@ -5,10 +5,17 @@ import Marquee from "react-fast-marquee";
 import Element from "../assets/MarqueeElement.svg";
 import Quotation from "../Components/Quotation";
 import Clients from "./Clients";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function About() {
     const location = useLocation();
     const aboutSection=useRef(null);
+
+    useEffect(()=>{
+        AOS.init({duration:1000});
+        AOS.refresh();
+    });
 
     useEffect(()=>{
         if(location.hash==="#about" && aboutSection.current)
@@ -19,16 +26,16 @@ function About() {
 
     return (
         <>
-            <div ref={aboutSection} className="bg-[#fff4e7] py-14 flex items-center justify-center flex-col">
+            <div ref={aboutSection} className="bg-[#fff4e7] relative overflow-hidden py-14 flex items-center justify-center flex-col">
                 <div className="w-[90vw] md:w-[45rem] lg:w-[58rem] xl:w-[70rem] flex items-center justify-between flex-col sm:flex-row gap-10">
-                    <div className="flex items-center justify-center flex-col">
+                    <div data-aos="fade-right" className="flex items-center justify-center flex-col">
                         <img src={Person} alt="Person" className="w-[70vw] sm:w-[15rem] md:w-[17rem] lg:w-[20rem]" />
                         <div className="flex items-center justify-center flex-col font-[Montserrat] mt-5">
                             <p className="font-semibold text-xl bg-gradient-to-br from-BStart via-BMiddle to-BEnd text-transparent bg-clip-text">Sri Vallapani Sreenu</p>
                             <p>(Managing Director)</p>
                         </div>
                     </div>
-                    <div className="basis-[65%] flex items-center sm:items-center justify-center flex-col gap-5 md:gap-10">
+                    <div  data-aos="fade-left" className="basis-[65%] flex items-center sm:items-center justify-center flex-col gap-5 md:gap-10">
                         <div>
                             <p className="text-center font-medium text-xl sm:text-2xl md:text-3xl font-[Montserrat] bg-gradient-to-r from-BStart via-BMiddle to-BEnd text-transparent bg-clip-text">
                                 ABHIRAM NIRMAN

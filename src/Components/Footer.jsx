@@ -47,11 +47,11 @@ function Footer() {
                             <p className="font-semibold uppercase mb-3 text-lg">
                                 Quick&nbsp;Links
                             </p>
-                            <Link>Home</Link>
-                            <Link>Projects</Link>
-                            <Link>About</Link>
-                            <Link>Services</Link>
-                            <Link>Contact</Link>
+                            <Link to="/#home">Home</Link>
+                            <Link to="/#projects">Projects</Link>
+                            <Link to="/#about">About</Link>
+                            <Link to="/services">Services</Link>
+                            <Link to="/#contact">Contact</Link>
                         </div>
                         <div className="flex items-start justify-center flex-col font-extralight w-60">
                             <p className="font-semibold uppercase mb-3 text-lg">

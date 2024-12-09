@@ -41,7 +41,7 @@ export default function App() {
                     <div className="md:w-52 lg:w-72 xl:w-80">
                         <img src={BlueHeaven} alt="BlueHeaven"/>
                         <div className="mt-3 md:mt-5 flex items-start justify-center flex-col font-normal text-[0.65rem] sm:text-sm">
-                            <p>ABHIRAM’S BLUE HEAVEN</p>
+                            <p>ABHIRAM’S Blue Heaven</p>
                             <p className="font-extralight">Aganampudi, Visakhapatnam</p>
                         </div>
                     </div>
@@ -50,7 +50,7 @@ export default function App() {
                     <div className="md:w-52 lg:w-72 xl:w-80">
                         <img src={BlueBay} alt="BlueBay"/>
                         <div className="mt-3 md:mt-5 flex items-start justify-center flex-col font-normal text-[0.65rem] sm:text-sm">
-                            <p>ABHIRAM’S BLUE bay towers</p>
+                            <p>ABHIRAM’S Blue Bay Towers</p>
                             <p className="font-extralight">Chinna Waltair, Beach Road</p>
                         </div>
                     </div>
@@ -59,7 +59,7 @@ export default function App() {
                     <div className="md:w-52 lg:w-72 xl:w-80">
                         <img src={Raghava} alt="Raghava"/>
                         <div className="mt-3 md:mt-5 flex items-start justify-center flex-col font-normal text-[0.65rem] sm:text-sm">
-                            <p>ABHIRAM’S raghava enclave</p>
+                            <p>ABHIRAM’S Raghava Enclave</p>
                             <p className="font-extralight">Saipriya Layout, Madhurawada</p>
                         </div>
                     </div>
@@ -68,7 +68,7 @@ export default function App() {
                     <div className="md:w-52 lg:w-72 xl:w-80">
                         <img src={Jasmine} alt="Jasmine"/>
                         <div className="mt-3 md:mt-5 flex items-start justify-center flex-col font-normal text-[0.65rem] sm:text-sm">
-                            <p>ABHIRAM’S jasmine heights</p>
+                            <p>ABHIRAM’S Jasmine Heights</p>
                             <p className="font-extralight">kurmannapalem, Visakhapatnam</p>
                         </div>
                     </div>
@@ -77,7 +77,7 @@ export default function App() {
                     <div className="md:w-52 lg:w-72 xl:w-80">
                         <img src={Kings} alt="Kings"/>
                         <div className="mt-3 md:mt-5 flex items-start justify-center flex-col font-normal text-[0.65rem] sm:text-sm">
-                            <p>ABHIRAM’S kings court</p>
+                            <p>ABHIRAM’S Kings Court</p>
                             <p className="font-extralight">Vadlapudi Village, Gajuwaka</p>
                         </div>
                     </div>

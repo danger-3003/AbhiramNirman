@@ -21,7 +21,7 @@ function Clients() {
             <div className="w-[90vw] xl:w-[70rem] font-[Montserrat] mt-10">
                 <Marquee pauseOnHover autoFill gradient gradientColor="#e8f7ff" gradientWidth={20}>
                     <div
-                        className="flex items-center justify-center flex-col w-60 md:w-64 h-[15rem] md:h-[19rem] bg-white m-3 md:m-5 p-5 rounded-lg"
+                        className="flex items-center justify-start flex-col w-60 md:w-64 h-[15rem] md:h-[19rem] bg-white m-3 md:m-5 p-5 rounded-lg"
                         style={{ boxShadow: "0px 0px 10px rgba(0,0,0,0.3)" }}
                     >
                         <img
@@ -42,7 +42,7 @@ function Clients() {
                         </p>
                     </div>
                     <div
-                        className="flex items-center justify-center flex-col w-60 md:w-64 h-[15rem] md:h-[19rem] bg-white m-3 md:m-5 p-5 rounded-lg"
+                        className="flex items-center justify-start flex-col w-60 md:w-64 h-[15rem] md:h-[19rem] bg-white m-3 md:m-5 p-5 rounded-lg"
                         style={{ boxShadow: "0px 0px 10px rgba(0,0,0,0.3)" }}
                     >
                         <img
@@ -63,7 +63,7 @@ function Clients() {
                         </p>
                     </div>
                     <div
-                        className="flex items-center justify-center flex-col w-60 md:w-64 h-[15rem] md:h-[19rem] bg-white m-3 md:m-5 p-5 rounded-lg"
+                        className="flex items-center justify-start flex-col w-60 md:w-64 h-[15rem] md:h-[19rem] bg-white m-3 md:m-5 p-5 rounded-lg"
                         style={{ boxShadow: "0px 0px 10px rgba(0,0,0,0.3)" }}
                     >
                         <img
@@ -84,7 +84,7 @@ function Clients() {
                         </p>
                     </div>
                     <div
-                        className="flex items-center justify-center flex-col w-60 md:w-64 h-[15rem] md:h-[19rem] bg-white m-3 md:m-5 p-5 rounded-lg"
+                        className="flex items-center justify-start flex-col w-60 md:w-64 h-[15rem] md:h-[19rem] bg-white m-3 md:m-5 p-5 rounded-lg"
                         style={{ boxShadow: "0px 0px 10px rgba(0,0,0,0.3)" }}
                     >
                         <img

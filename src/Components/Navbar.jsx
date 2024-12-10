@@ -42,7 +42,7 @@ function Navbar() {
             <a href="tel:+919133273338" className="group">
                 <div className="group-hover:bg-none border border-BEnd bg-gradient-to-r transition-all duration-300 from-BStart via-BMiddle to-BEnd group-hover:text-BEnd text-white px-2 sm:px-3 py-2 sm:py-1 rounded-full sm:rounded-[0.25rem] absolute top-[0.79rem] right-5 md:right-10 lg:right-16">
                     <p className="hidden sm:block">Book a Demo</p>
-                    <FontAwesomeIcon icon={faPhone} className="text-white group-hover:text-BEnd text-lg block sm:hidden"/>
+                    <FontAwesomeIcon icon={faPhone} className="text-white group-hover:text-BEnd text-base sm:text-lg block sm:hidden"/>
                 </div>
             </a>
         </div>

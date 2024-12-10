@@ -1,5 +1,6 @@
 import React from "react";
 import Bg from "../assets/About/bottomBg.jpg";
+import Logo from "../assets/Logo.svg";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
@@ -8,7 +9,7 @@ import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 function Footer() {
     return (
         <div
-            className="flex items-center justify-center w-full"
+            className="flex items-center justify-center w-full relative"
             style={{
                 background: `linear-gradient(to right,rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(${Bg})`,
                 backgroundPosition: "center",
@@ -16,6 +17,7 @@ function Footer() {
             }}
         >
             <div className="h-full w-full backdrop-blur flex items-center justify-start flex-col font-[Montserrat] text-white py-10">
+                <img src={Logo} alt="Logo" className="w-32 sm:w-40"/>
                 <p className="font-medium text-center text-xl sm:text-2xl">
                     Buy Premium Apartments in vizag.
                 </p>

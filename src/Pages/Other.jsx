@@ -13,7 +13,7 @@ function OtherProjects() {
     
     return (
         <div className="font-[Montserrat] py-14 px-5 md:px-10 lg:px-14 text-white bg-gradient-to-b from-BStart via-BMiddle to-BEnd flex items-center justify-center relative overflow-hidden">
-            <div className=" w-full xl:w-[70rem] relative overflow-hidden">
+            <div className=" w-full xl:w-[70rem]">
                 <div data-aos="fade-right" className="flex items-center justify-center sm:justify-start gap-5 flex-row">
                     <p className="font-bold text-xl md:text-2xl lg:text-3xl">Other Projects</p>
                     <img src={Line} alt="Line" className="w-32 lg:w-40 hidden sm:block"/>

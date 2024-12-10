@@ -35,7 +35,7 @@ function Services() {
                         data-aos="fade-right"
                         src={BrickManufacture}
                         alt="BrickManufacture"
-                        className="w-[18rem] h-[12rem] lg:w-[25rem] lg:h-[18rem] xl:w-[30rem] xl:h-[20rem] object-cover"
+                        className="sm:w-[18rem] sm:h-[12rem] lg:w-[25rem] lg:h-[18rem] xl:w-[30rem] xl:h-[20rem] object-cover"
                     />
                     <div data-aos="fade-left" className="flex items-center justify-center flex-col">
                         <p className="mb-2 font-[Italiana] bg-gradient-to-r from-BStart via-BMiddle to-BEnd bg-clip-text text-transparent font-Bold text-lg text-center md:text-2xl lg:text-3xl ">Abhiram's Ready Mix Plant</p>
@@ -60,7 +60,7 @@ function Services() {
                         data-aos="fade-left"
                         src={ReadyMix}
                         alt="Ready Mixture Plant"
-                        className="w-[18rem] h-[12rem] lg:w-[25rem] lg:h-[18rem] xl:w-[30rem] xl:h-[20rem] object-cover"
+                        className="sm:w-[18rem] sm:h-[12rem] lg:w-[25rem] lg:h-[18rem] xl:w-[30rem] xl:h-[20rem] object-cover"
                     />
                     <div data-aos="fade-right" className="flex items-center justify-center flex-col">
                         <p className="mb-2 font-[Italiana] bg-gradient-to-r from-BStart via-BMiddle to-BEnd bg-clip-text text-transparent font-Bold text-lg text-center md:text-2xl lg:text-3xl ">Abhiram's Brick Manufacturing Plant</p>

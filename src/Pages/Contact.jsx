@@ -10,7 +10,7 @@ function Contact() {
         name: "",
         email: "",
         number: "",
-        Subject: "",
+        Subject: "TouchStone",
         Body: "",
     });
 
@@ -27,9 +27,9 @@ function Contact() {
             name: details.name,
             email: details.email,
             toMail: "abiramnirman@gmail.com",
-            toName: "MSquare Elevators",
+            toName: "Abhiram Nirman",
             phone: details.number,
-            subject: details.Subject, // Include inquiryType in subject
+            subject: "Enquiry about "+details.Subject, // Include inquiryType in subject
             message: details.Body,
         };
         axios
@@ -43,7 +43,7 @@ function Contact() {
                         name: "",
                         email: "",
                         number: "",
-                        Subject: "",
+                        Subject: "TouchStone",
                         Body: "",
                     });
                 }
@@ -51,7 +51,7 @@ function Contact() {
             .catch((err) => {
                 console.log(err);
             });
-        console.log(details);
+        console.log(data);
     };
 
     return (
@@ -141,22 +141,28 @@ function Contact() {
                             } sm:w-72 md:w-80 my-2`}
                         >
                             <p className="font-semibold text-lg">
-                                Subject<span className="text-red-600">*</span>
+                                Projects<span className="text-red-600">*</span>
                             </p>
-                            <input
-                                type="text"
-                                placeholder="Subject"
-                                required
-                                value={details.Subject}
-                                name="country"
+                            <select name="Projects"
+                                className="border-b-2 border-BEnd outline-none bg-white shadow-md shadow-slate-400 rounded-sm w-full px-2 py-1 text-slate-900"
                                 onChange={(e) => {
                                     setDetails({
                                         ...details,
                                         Subject: e.target.value,
                                     });
                                 }}
-                                className="border-b-2 border-BEnd outline-none bg-white shadow-md shadow-slate-400 rounded-sm w-full px-2 py-1 text-slate-900"
-                            />
+                            >
+                                <option value="TouchStone" className="bg-white">TouchStone</option>
+                                <option value="Iconic Towers" className="bg-white">Iconic Towers</option>
+                                <option value="TS Imperio" className="bg-white">TS Imperio</option>
+                                <option value="Jasmine Heights" className="bg-white">Jasmine Heights</option>
+                                <option value="Blue Heaven" className="bg-white">Blue Heaven</option>
+                                <option value="Blue Bay Towers" className="bg-white">Blue Bay Towers</option>
+                                <option value="Raghava Enclave" className="bg-white">Raghava Enclave</option>
+                                <option value="Kings Court" className="bg-white">Kings Court</option>
+                                <option value="Sri Raj Castles" className="bg-white">Sri Raj Castles</option>
+                                <option value="Diamond Spring" className="bg-white">Diamond Spring</option>
+                            </select>
                         </div>
                         <div
                             className={`${

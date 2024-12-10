@@ -38,11 +38,11 @@ function Services() {
                         className="sm:w-[18rem] sm:h-[12rem] lg:w-[25rem] lg:h-[18rem] xl:w-[30rem] xl:h-[20rem] object-cover"
                     />
                     <div data-aos="fade-left" className="flex items-center justify-center flex-col">
-                        <p className="mb-2 font-[Italiana] bg-gradient-to-r from-BStart via-BMiddle to-BEnd bg-clip-text text-transparent font-Bold text-lg text-center md:text-2xl lg:text-3xl ">Abhiram's Ready Mix Plant</p>
-                        <p className="text-center md:text-left text-[0.7rem] sm:text-sm">
+                        <p className="mb-2 font-[Italiana] bg-gradient-to-r from-BStart via-BMiddle to-BEnd bg-clip-text text-transparent font-Bold text-xl text-center md:text-2xl lg:text-3xl ">Abhiram's Ready Mix Plant</p>
+                        <p className="text-justify md:text-left text-sm">
                             Abhiram Nirman (India) Pvt. Ltd Abhirams mixed plant
                             set up best commercial Ready Mixed Concrete (RMC)
-                            plant in visakhapatnam . Ready Mixed Concrete (RMC)
+                            plant in visakhapatnam. Ready Mixed Concrete (RMC)
                             coupled with the promotion of bulk cement handling
                             facilities have been responsible for redefining the
                             pace and quality of construction activity in mega
@@ -63,13 +63,13 @@ function Services() {
                         className="sm:w-[18rem] sm:h-[12rem] lg:w-[25rem] lg:h-[18rem] xl:w-[30rem] xl:h-[20rem] object-cover"
                     />
                     <div data-aos="fade-right" className="flex items-center justify-center flex-col">
-                        <p className="mb-2 font-[Italiana] bg-gradient-to-r from-BStart via-BMiddle to-BEnd bg-clip-text text-transparent font-Bold text-lg text-center md:text-2xl lg:text-3xl ">Abhiram's Brick Manufacturing Plant</p>
-                        <p className="text-center md:text-left text-[0.7rem] sm:text-sm">
+                        <p className="mb-2 font-[Italiana] bg-gradient-to-r from-BStart via-BMiddle to-BEnd bg-clip-text text-transparent font-Bold text-xl text-center md:text-2xl lg:text-3xl ">Abhiram's Brick Manufacturing Plant</p>
+                        <p className="text-justify md:text-left text-sm">
                             Brick Manufacturing Plant Providing you the best
                             range of automatic bricks manufacturing plant,
                             bricks making plant, fully automatic bricks making
                             plant, semi automatic bricks making
-                            plant,multifunction brick making plant and multi
+                            plant, multifunction brick making plant and multi
                             material bricks manufacturing plant with effective &
                             timely delivery.
                         </p>

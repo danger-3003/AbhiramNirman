@@ -1,5 +1,6 @@
-import {  useState } from "react";
+import { useState } from "react";
 import Iconic from "../assets/Projects/IonicTowers.jpg";
+import Imperio from "../assets/Projects/TsImperio.jpg";
 import Line from "../assets/otherProjects/Line.svg";
 import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -28,12 +29,12 @@ export default function App() {
             <Swiper
                 spaceBetween={0}
                 centeredSlides={true}
-                autoplay={{
-                    delay: 2500,
-                    disableOnInteraction: false,
-                }}
+                // autoplay={{
+                //     delay: 2500,
+                //     disableOnInteraction: false,
+                // }}
                 pagination={{
-                  clickable: true,
+                    clickable: true,
                 }}
                 loop={false}
                 navigation={true}
@@ -148,7 +149,7 @@ export default function App() {
                     <div
                         className="h-[28rem] sm:h-[32rem] md:h-[35rem] w-full pt-14"
                         style={{
-                            background: `linear-gradient(to bottom,rgba(0,0,0,0.8),rgba(0,0,0,0.2),rgba(0,0,0,0),rgba(0,0,0,0.5),rgba(0,0,0,0.8)),url(${Iconic})`,
+                            background: `linear-gradient(to bottom,rgba(0,0,0,0.8),rgba(0,0,0,0.2),rgba(0,0,0,0),rgba(0,0,0,0.5),rgba(0,0,0,0.8)),url(${Imperio})`,
                             backgroundPosition: "center left",
                             backgroundSize: "cover",
                         }}
@@ -170,7 +171,7 @@ export default function App() {
                                 sm:w-32 md:w-40 lg:w-48 xl:w-60 rotate-180"
                                     />
                                     <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mx-3 w-min lg:w-max">
-                                        ICONIC&nbsp;TOWERS
+                                        TS&nbsp;Imperio
                                     </p>
                                     <img
                                         src={Line}
@@ -210,7 +211,7 @@ export default function App() {
                                         View More
                                     </p>
                                     <p className="text-lg lg:text-xl font-light">
-                                        C + 6 Floors | 1065 - 1495 SFT
+                                        G2 + 4 Floors | 1275 - 2020 SFT
                                     </p>
                                 </div>
                                 <p
@@ -220,14 +221,15 @@ export default function App() {
                                             : "absolute -bottom-96"
                                     } transition-all duration-500 text-sm md:text-base lg:text-lg xl:text-xl sm:w-[35rem] md:w-[40rem] lg:w-[50rem] text-center xl:w-[65rem] py-5 lg:py-10`}
                                 >
-                                    Abhiram’s IconicTowers offers 2 & 3 BHK
-                                    Vasthu-compliant apartments (1065-1495 sq.
-                                    ft.) in a prime location near Atchutapuram.
-                                    These 6-floor towers feature no common
-                                    walls, cellar parking, a multi-level
-                                    clubhouse, 24/7 security, power backup, and
-                                    landscaped greenery, ensuring comfort,
-                                    ventilation, and a peaceful lifestyle.
+                                    Abhiram TS Imperio offers Commercial Spaces
+                                    and 3 BHK Luxury Apartments (1275–2020 sq.
+                                    ft.) in a meticulously planned layout near
+                                    Kurmanapalem. Designed for optimal
+                                    natural light and ventilation. The 
+                                    gated community includes 24/7
+                                    security, power backup, and lush green
+                                    surroundings for a truly exceptional
+                                    lifestyle.
                                 </p>
                             </div>
                         </div>
@@ -239,7 +241,7 @@ export default function App() {
                                     Browse
                                 </p>
                                 <p className="bg-gradient-to-r from-BStart via-BMiddle to-BEnd text-transparent bg-clip-text font-[Italiana] text-center sm:text-left text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium">
-                                    Iconic&nbsp;Towers Amenities
+                                    TS&nbsp;Imperio Amenities
                                 </p>
                             </div>
                             <div className="w-[90vw] sm:w-[70%]">

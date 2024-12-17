@@ -18,11 +18,11 @@ function OtherProjects() {
                     <p className="font-bold text-xl md:text-2xl lg:text-3xl">Other Projects</p>
                     <img src={Line} alt="Line" className="w-32 lg:w-40 hidden sm:block"/>
                 </div>
-                <div data-aos="fade">
-                    <ProjectsSwiper />
-                </div>
-                <div className="absolute bottom-0 left-0">
+                <div className="absolute bottom-0 left-0 z-[1]">
                     <img src={BgPattern} alt="Pattern" />
+                </div>
+                <div data-aos="fade" className="relative z-[5]">
+                    <ProjectsSwiper />
                 </div>
             </div>
         </div>
